@@ -5,7 +5,7 @@ const DatosBancarios = () => {
   return (
     <div className=" bg-principal-dark mt-20 flex flex-col justify-center items-center py-20">
         <img src={gift} alt="regalo" className="w-40 text-white"/>
-        <p className='text-white text-lg'>Si deseás realizarnos un regalo para nuestra luna de miel...</p>
+        <p className='text-white text-lg text-center px-5 md:px-0'>Si deseás realizarnos un regalo para nuestra luna de miel...</p>
         <Modal/>
     </div>
   )
