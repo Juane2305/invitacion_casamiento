@@ -1,6 +1,7 @@
 import Asistencia from '../components/Asistencia'
 import Canciones from '../components/Canciones'
 import DatosBancarios from '../components/DatosBancarios'
+import DressCode from '../components/DressCode'
 import { FocusCardsDemo } from '../components/FocusCardsDemo'
 import Footer from '../components/Footer'
 import ImagenPrincipal from '../components/ImagenPrincipal'
@@ -15,6 +16,7 @@ export const MainPage = () => {
       <TextoBajoImagen/>
       <Lugares/>
       <FocusCardsDemo/>
+      <DressCode/>
       <DatosBancarios/>
       <Canciones/>
       <Asistencia/>

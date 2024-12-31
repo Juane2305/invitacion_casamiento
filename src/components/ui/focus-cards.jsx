@@ -35,7 +35,7 @@ export function FocusCards({ cards }) {
 
   return (
     <div>
-        <h2 className="text-center text-3xl pt-20">Nosotros</h2>
+        <h2 className="text-center text-4xl pt-48 font-thin">Nosotros</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-10 max-w-5xl mx-auto md:px-8 w-full mt-10">
         {cards.map((card, index) => (
             <Card
