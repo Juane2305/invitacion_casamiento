@@ -19,7 +19,7 @@ const Places = () => {
           
         </div>
       </section>
-        <a href="https://maps.app.goo.gl/4XyzMRjyujMSjckK7" target='__blank'><button className='border-4 border-principal-dark py-3 px-8 rounded-full hover:transition bg-principal-dark text-white font-bold hover:bg-transparent hover:text-gray-900 hover:border-4'>CÓMO LLEGAR</button></a>
+        <a href="https://maps.app.goo.gl/4XyzMRjyujMSjckK7" target='__blank'><button className='border-4 border-principal-dark py-3 px-8 rounded-full hover:transition bg-principal-dark text-white font-bold hover:bg-transparent hover:text-gray-900 hover:border-4 mt-20'>CÓMO LLEGAR</button></a>
         <div>
           <GoogleCalendarButton/>
         </div>

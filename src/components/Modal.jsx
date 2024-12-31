@@ -20,16 +20,16 @@ export const Modal = () => {
               <div className="space-y-3">
                 <p className="text-lg">
                   <span className="font-semibold">Nombre del titular:</span>{" "}
-                  Valentina Elizondo
+                  Juan Pablo Glovaski
                 </p>
                 <p className="text-lg">
-                  <span className="font-semibold">CBU:</span> 12345623561
+                  <span className="font-semibold">CBU:</span> 0720708488000002961004
                 </p>
                 <p className="text-lg">
-                  <span className="font-semibold">Alias:</span> vale.elizondo
+                  <span className="font-semibold">Alias:</span> juampi.glovaski
                 </p>
                 <p className="text-lg">
-                  <span className="font-semibold">DNI:</span> 41412434
+                  <span className="font-semibold">DNI:</span> 41230670
                 </p>
                 <p className="font-semibold text-lg">Banco Santander</p>
               </div>
