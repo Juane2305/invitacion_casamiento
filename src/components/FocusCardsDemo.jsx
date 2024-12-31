@@ -4,11 +4,11 @@ import { FocusCards } from "./ui/focus-cards";
 export function FocusCardsDemo() {
   const cards = [
     {
-      title: "𝄞",
+      title: "🎵",
       src: "https://res.cloudinary.com/dfschbyq2/image/upload/v1735527048/Imagen_de_WhatsApp_2024-12-29_a_las_22.57.33_f9f5bf2b_ifsj5l.jpg",
     },
     {
-      title: "♡",
+      title: "❤️",
       src: "https://res.cloudinary.com/dfschbyq2/image/upload/v1735527113/Imagen_de_WhatsApp_2024-12-29_a_las_22.57.32_a25fd1b8_smbhnh.jpg",
     },
     {
