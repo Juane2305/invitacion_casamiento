@@ -1,9 +1,10 @@
 import copas from '../assets/copas.svg'
 import rings from '../assets/rings.svg'
+import GoogleCalendarButton from './GoogleCalendarButton'
 
 const Places = () => {
   return (
-    <div className='w-full pt-10 flex flex-col items-center gap-y-20'>
+    <div className='w-full pt-10 flex flex-col items-center gap-y-16'>
       <section className='flex flex-col md:flex-row justify-center gap-x-36'>
         <div className=' flex flex-col justify-center items-center gap-y-3'>
           <img src={rings} alt="" className='size-40'/>
@@ -19,6 +20,9 @@ const Places = () => {
         </div>
       </section>
         <a href="https://maps.app.goo.gl/4XyzMRjyujMSjckK7" target='__blank'><button className='border-4 border-principal-dark py-3 px-8 rounded-full hover:transition bg-principal-dark text-white font-bold hover:bg-transparent hover:text-gray-900 hover:border-4'>CÓMO LLEGAR</button></a>
+        <div>
+          <GoogleCalendarButton/>
+        </div>
     </div>
   )
 }
