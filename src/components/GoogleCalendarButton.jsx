@@ -20,7 +20,7 @@ const GoogleCalendarButton = () => {
       rel="noopener noreferrer"
       className="border-4 border-principal-dark py-3 px-8 rounded-full hover:transition bg-principal-dark text-white font-bold hover:bg-transparent hover:text-gray-900 hover:border-4 uppercase" 
     >
-      Agregar a Google Calendar
+      Agregar al Calendario
     </a>
   );
 };
