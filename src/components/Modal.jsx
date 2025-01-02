@@ -6,7 +6,7 @@ export const Modal = () => {
   return (
     <>
       <button
-        className="bg-principal-light py-4 px-6 rounded-lg text-white font-bold mt-5"
+        className="bg-principal-light py-4 px-6 rounded-lg text-white font-bold mt-5 transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
         onClick={() => setIsOpen(true)}
       >
         Ver Datos Bancarios
@@ -33,7 +33,7 @@ export const Modal = () => {
                 </p>
                 <p className="font-semibold text-lg">Banco Santander</p>
               </div>
-              <button className="bg-principal-light  border-principal-light py-4 rounded-lg text-white font-bold hover:bg-transparent hover:transition hover:text-gray-900 border-4" onClick={() => setIsOpen(false)}>Cerrar</button>
+              <button className="bg-principal-light  border-principal-light py-4 rounded-lg text-white font-bold hover:bg-transparent hover:transition hover:text-gray-900 border-4 transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg" onClick={() => setIsOpen(false)}>Cerrar</button>
             </div>
           </div>
         </div>

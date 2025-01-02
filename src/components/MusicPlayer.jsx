@@ -23,7 +23,7 @@ const MusicPlayer = () => {
       <audio ref={audioRef} src={song} preload="auto"></audio>
       <button onClick={togglePlayPause}>
       
-        {isPlaying ? <img src={pause} alt="" className="text-center size-28 ml-10 mt-9 animate-custom-bounce"/> : <img src={icon} alt="" className="text-center size-28 ml-10 mt-9 animate-custom-bounce"/>}
+        {isPlaying ? <img src={pause} alt="" className="text-center size-20 ml-3 sm:ml-10 mt-9 animate-custom-bounce bg-black rounded-full p-4 fixed bg-opacity-40 z-50"/> : <img src={icon} alt="" className="text-center size-20 ml-3 sm:ml-10 mt-9 animate-custom-bounce bg-black rounded-full p-4 fixed bg-opacity-40 z-50"/>}
       </button>
       
     </div>
