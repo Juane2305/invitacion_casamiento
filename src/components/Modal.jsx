@@ -1,12 +1,24 @@
 import { useState } from "react";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const Modal = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duración de la animación en milisegundos
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
+
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
       <button
-        className="bg-principal-light py-4 px-6 rounded-lg text-white font-bold mt-5 transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+        className="bg-principal-light py-4 px-6 rounded-lg text-white font-bold mt-5 transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg" data-aos= 'fade-up'
         onClick={() => setIsOpen(true)}
       >
         Ver Datos Bancarios
