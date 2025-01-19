@@ -1,12 +1,24 @@
 import { useState } from "react";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const Modal = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duración de la animación en milisegundos
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
+
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
       <button
-        className="bg-principal-light py-4 px-6 rounded-lg text-white font-bold mt-5"
+        className="bg-principal-light py-4 px-6 rounded-lg text-white font-bold mt-5 transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg" data-aos= 'fade-up'
         onClick={() => setIsOpen(true)}
       >
         Ver Datos Bancarios
@@ -20,20 +32,20 @@ export const Modal = () => {
               <div className="space-y-3">
                 <p className="text-lg">
                   <span className="font-semibold">Nombre del titular:</span>{" "}
-                  Valentina Elizondo
+                  Juan Pablo Glovaski
                 </p>
                 <p className="text-lg">
-                  <span className="font-semibold">CBU:</span> 12345623561
+                  <span className="font-semibold">CBU:</span> 0720708488000002961004
                 </p>
                 <p className="text-lg">
-                  <span className="font-semibold">Alias:</span> vale.elizondo
+                  <span className="font-semibold">Alias:</span> juampi.glovaski
                 </p>
                 <p className="text-lg">
-                  <span className="font-semibold">DNI:</span> 41412434
+                  <span className="font-semibold">DNI:</span> 41230670
                 </p>
                 <p className="font-semibold text-lg">Banco Santander</p>
               </div>
-              <button className="bg-principal-light  border-principal-light py-4 rounded-lg text-white font-bold hover:bg-transparent hover:transition hover:text-gray-900 border-4" onClick={() => setIsOpen(false)}>Cerrar</button>
+              <button className="bg-principal-light  border-principal-light py-4 rounded-lg text-white font-bold hover:bg-transparent hover:transition hover:text-gray-900 border-4 transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg" onClick={() => setIsOpen(false)}>Cerrar</button>
             </div>
           </div>
         </div>
