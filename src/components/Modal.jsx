@@ -13,7 +13,7 @@ export const Modal = () => {
       </button>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-principal-light bg-opacity-30 backdrop-blur-md flex justify-center items-center">
+        <div className="fixed inset-0 bg-principal-light bg-opacity-30 backdrop-blur-md flex justify-center items-center z-50">
           <div className="bg-white p-10 rounded-lg flex flex-col justify-center items-center border-8 border-principal-light">
             <div className="flex flex-col justify-center space-y-7">
               <h2 className="text-center font-bold text-2xl">Datos Bancarios</h2>
