@@ -4,23 +4,22 @@ import DatosBancarios from '../components/DatosBancarios'
 import DressCode from '../components/DressCode'
 import { FocusCardsDemo } from '../components/FocusCardsDemo'
 import Footer from '../components/Footer'
-import GoogleCalendarButton from '../components/GoogleCalendarButton'
 import ImagenPrincipal from '../components/ImagenPrincipal'
-import Lugares from '../components/Lugares'
-import {TextoBajoImagen}  from '../components/TextoBajoImagen'
+import LugaresFiesta from '../components/LugaresFiesta'
 import TextoFinal from '../components/TextoFinal'
 import hojasVerdes from '../assets/hojasVerdes.svg'
 import hojasVerdes2 from '../assets/hojasVerdes2.svg'
 import hojasVerdesIzq from '../assets/hojasVerdesIzq.svg'
+import CountdownFiesta from '../components/CountdownFiesta'
+import GoogleCalendar from '../components/GoogleCalendar'
 
-
-export const MainPage = () => {
+const Fiesta = () => {
   return (
     <div className='font-eleganteText overflow-hidden bg-[#FAF3E0]'>
-      <ImagenPrincipal/>
-      <TextoBajoImagen/>
-      <Lugares/>
-      <div className="relative mt-10 pb-10 border-b-2 border-[#D4AF37]">
+        <ImagenPrincipal/>
+        <CountdownFiesta/>
+        <LugaresFiesta/>
+        <div className="relative mt-10 pb-10 border-b-2 border-[#D4AF37]">
             <img
               src={hojasVerdes}
               alt="Decoración de hojas"
@@ -33,8 +32,8 @@ export const MainPage = () => {
               className="hidden lg:block absolute right-[-50px] top-1/2 transform -translate-y-1/2 w-36 lg:w-48 opacity-70"
             />
           </div>
-      <GoogleCalendarButton/>
-      <div className="relative">
+          <GoogleCalendar/>
+          <div className="relative">
             <img
               src={hojasVerdesIzq}
               alt="Decoración de hojas"
@@ -51,9 +50,11 @@ export const MainPage = () => {
             <DatosBancarios/>
           </div>
       <Canciones/>
-      <Asistencia/>
       <TextoFinal/>
       <Footer/>
     </div>
-)
+
+  )
 }
+
+export default Fiesta

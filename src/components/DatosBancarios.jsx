@@ -1,8 +1,9 @@
 import { Modal } from './Modal'
-import gift from '../assets/gift.svg'
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { CiGift } from "react-icons/ci";
+
 
 const DatosBancarios = () => {
 
@@ -15,10 +16,12 @@ const DatosBancarios = () => {
   }, []);
 
   return (
-    <div className=" bg-principal-dark mt-20 flex flex-col justify-center items-center py-20">
-        <img src={gift} alt="regalo" className="w-40 text-white" data-aos= 'fade-up'/>
-        <p className='text-white text-lg text-center px-5 md:px-0' data-aos= 'fade-up'>Si deseás hacernos un regalo te dejamos nuestros datos</p>
-        <Modal/>
+    <div className={`mt-20 flex flex-col justify-center items-center py-20 gap-y-5 bg-[#FAF3E0] text-center text-black`}>
+        <CiGift className='size-32'/>
+        <div className={`flex flex-col items-center justify-center`}>
+          <p className={`text-center px-5 md:px-0 text-xl`} data-aos= 'fade-up'>Si deseás hacernos un regalo te dejamos nuestros datos</p>
+          <Modal/>
+        </div>
     </div>
   )
 }

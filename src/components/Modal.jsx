@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { IoCopyOutline } from "react-icons/io5";
+
 
 export const Modal = () => {
 
@@ -15,10 +17,20 @@ export const Modal = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
+  const copiarTexto = (texto) => {
+    navigator.clipboard.writeText(texto)
+      .then(() => {
+        alert(`¡Copiado al portapapeles!`);
+      })
+      .catch(() => {
+        alert('Error al copiar. Intenta de nuevo.');
+      });
+  };
+
   return (
     <>
       <button
-        className="bg-principal-light py-4 px-6 rounded-lg text-white font-bold mt-5 transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg" data-aos= 'fade-up'
+        className="py-4 px-6 border-2 rounded-lg mt-5 transform transition-transform duration-300 ease-in-out hover:transition hover:scale-105 hover:shadow-lg border-principal-dark text-white bg-principal-dark hover:bg-transparent hover:text-green-900 text-xl" data-aos= 'fade-up'
         onClick={() => setIsOpen(true)}
       >
         Ver Datos Bancarios
@@ -36,9 +48,21 @@ export const Modal = () => {
                 </p>
                 <p className="text-lg">
                   <span className="font-semibold">CBU:</span> 0720708488000002961004
+                  <button
+                    className="ml-3 "
+                    onClick={() => copiarTexto('0720708488000002961004')}
+                  >
+                    <IoCopyOutline className="text-principal-light"/>
+                  </button>
                 </p>
                 <p className="text-lg">
                   <span className="font-semibold">Alias:</span> juampi.glovaski
+                  <button
+                    className="ml-3 "
+                    onClick={() => copiarTexto('juampi.glovaski')}
+                  >
+                    <IoCopyOutline className="text-principal-light"/>
+                  </button>
                 </p>
                 <p className="text-lg">
                   <span className="font-semibold">DNI:</span> 41230670

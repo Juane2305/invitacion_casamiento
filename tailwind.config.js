@@ -9,7 +9,8 @@ export default {
       backgroundImage:{
         'fondo-save' : "url('https://res.cloudinary.com/dfschbyq2/image/upload/v1735229051/_MG_2670-1_syiydx.jpg')",
         'fondo-save-desk' : "url('https://res.cloudinary.com/dfschbyq2/image/upload/v1735508433/Dise%C3%B1o_sin_t%C3%ADtulo_6_xy3ozy.png')",
-        'fondo-tela' : "url('https://res.cloudinary.com/dfschbyq2/image/upload/v1735580470/Agregar_un_t%C3%ADtulo-2_iz5elu.png')"
+        'fondo-tela' : "url('https://res.cloudinary.com/dfschbyq2/image/upload/v1735580470/Agregar_un_t%C3%ADtulo-2_iz5elu.png')",
+        'fondo-elegante': "url('https://res.cloudinary.com/dfschbyq2/image/upload/v1737037828/Disen%CC%83o_Elegante_gem3ut.png')"
       },
       animation: {
         'custom-bounce': 'custom-bounce 1s infinite',
@@ -26,6 +27,9 @@ export default {
           light: '#d0bcab',
           dark: '#a8ad9a',
         }
+      },
+      fontFamily :{
+        eleganteText: ['Cormorant Infant', 'serif'],
       }
     },
   },

@@ -1,11 +1,14 @@
+import React from 'react'
 import copas from "../assets/copas.svg";
 import rings from "../assets/rings.svg";
-import GoogleCalendarButton from "./GoogleCalendarButton";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+   
 
-const Places = () => {
+const LugaresFiesta = () => {
+
+
   useEffect(() => {
     AOS.init({
       duration: 1000, // Duración de la animación en milisegundos
@@ -22,19 +25,6 @@ const Places = () => {
       <section className="flex flex-col gap-y-20 md:gap-y-0 md:flex-row justify-center gap-x-36">
         <div
           className=" flex flex-col justify-center items-center gap-y-3"
-          data-aos="fade-right"
-        >
-          <img src={rings} alt="" className="size-40" />
-          <h2 className="text-center font-semibold text-2xl tracking-wider">
-            CIVIL
-          </h2>
-          <p className="font-extralight text-xl text-center px-5 text-gray-700">
-            La ceremonia civil se realizará en el salón Terra Oliva <br /> a las
-            13:00hs.
-          </p>
-        </div>
-        <div
-          className=" flex flex-col justify-center items-center gap-y-3"
           data-aos="fade-left"
         >
           <img src={copas} alt="" className="size-40" />
@@ -42,18 +32,18 @@ const Places = () => {
             FIESTA
           </h2>
           <p className="font-extralight text-xl text-center px-5 text-gray-700">
-            Continuaremos con la fiesta en el mismo lugar <br /> ¡Te esperamos
+            La fiesta se realizará en el salón Terra Oliva a las 16:00hs <br /> ¡Te esperamos
             para festejar juntos!
           </p>
         </div>
       </section>
       <a href="https://maps.app.goo.gl/FC3Y7jit4SsuoCuW6" target="_blank">
         <button className="border-2 border-[#D4AF37] py-3 px-8 rounded-full text-[#D4AF37] font-bold hover:bg-[#D4AF37] hover:text-white mt-5 md:mt-10 transition">
-          CÓMO LLEGAR
+            CÓMO LLEGAR
         </button>
       </a>
     </div>
-  );
-};
+  )
+}
 
-export default Places;
+export default LugaresFiesta

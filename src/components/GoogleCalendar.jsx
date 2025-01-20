@@ -2,11 +2,11 @@ import React from "react";
 import { CiCalendar } from "react-icons/ci";
 
 
-const GoogleCalendarButton = () => {
+const GoogleCalendar = () => {
   const title = "Casamiento Vale y Juampi";
   const details = "¡No olvides asistir a nuestro evento!";
   const location = "Salón Terra Oliva";
-  const startDate = "20250406T130000"; // Formato: YYYYMMDDTHHmmssZ (UTC)
+  const startDate = "20250406T160000"; // Formato: YYYYMMDDTHHmmssZ (UTC)
   const endDate = "20250407T000000";
 
   const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
@@ -33,4 +33,4 @@ const GoogleCalendarButton = () => {
   );
 };
 
-export default GoogleCalendarButton;
+export default GoogleCalendar;
